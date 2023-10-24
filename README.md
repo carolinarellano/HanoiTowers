@@ -1,3 +1,3 @@
 # HanoiTowers
 
-This is a project for the Architecture and organization of computers, it is built on Assembly
+This is a project for the Architecture and Organization of Computers, it is built on Assembly
