@@ -44,21 +44,21 @@ main:
 			bge s4, t3, endforpop 
 			lw t5, 0(s7) # valor del disco actual
 			
-		 # if(s4 == 0)
-				beq s4, zero, elsepop
-				lw s0, 0(s7)
-				sw zero, 0(s7) # se borra lo leido de la torre source -> t5 tiene el valor borrado
-				jal endforpop
+		# if(s4 == 0)
+			beq s4, zero, elsepop
+			lw s0, 0(s7)
+			sw zero, 0(s7) # se borra lo leido de la torre source -> t5 tiene el valor borrado
+			jal endforpop
 				
 		elsepop:
-				addi s7, s7, 4 # s7 = s1 + 4 
-				addi s4, s4, 1 # i++
-				jal forpop
+			addi s7, s7, 4 # s7 = s1 + 4 
+			addi s4, s4, 1 # i++
+			jal forpop
 				
 		endforpop:
-				lw ra, 0(sp)
-				addi sp, sp, 4 
-				jalr ra
+			lw ra, 0(sp)
+			addi sp, sp, 4 
+			jalr ra
 
 	# t5 se utiliza como la variable que tiene el valor almacenado para hacer el push
 	
@@ -73,17 +73,17 @@ main:
 			bge s4, t3, endforpush 
 			lw t5, 0(s7) # valor del disco actual
 		# if(s4 == 0)
-				bne s4, zero, elsepush 
-				sw t5, 0(s7) # se agrega el valor de t5 a la torre destination
-				jal endforpush
+			bne s4, zero, elsepush 
+			sw t5, 0(s7) # se agrega el valor de t5 a la torre destination
+			jal endforpush
 		elsepush:
-				addi s7, s7, 4 # s7 = s7 + 4
-				addi s4, s4, 1 # i++
-				jal s8, forpush # se almacena ra y regresa al for
+			addi s7, s7, 4 # s7 = s7 + 4
+			addi s4, s4, 1 # i++
+			jal s8, forpush # se almacena ra y regresa al for
 		endforpush:
-				lw ra, 0(sp)
-				addi sp, sp, 4 
-				jalr ra
+			lw ra, 0(sp)
+			addi sp, sp, 4 
+			jalr ra
 
 			addi s4, zero, 0 # Reinicia la variable i
 			
