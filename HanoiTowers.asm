@@ -1,7 +1,6 @@
 # Ana Carolina Arellano Valdez 	Alicia Sofia Gomez Galvez
 
 .text
-main: 
 	lui s1, 0x10010 # Torre 1 -> source
 	addi t2, zero, 1 # default
 	addi t3, zero, 2 # n -> cantidad de discos
@@ -16,7 +15,7 @@ main:
 	addi s7, zero, 0 # Apuntador para almacenar temporalmente el inicio de cada torre
 	addi s8, zero, 0 # Almacena la direccion de ra
 	addi s9, zero, 0 # Temporal para el swap
-	
+main: 
 	# Aqui se inicializan los discos en la memoria
 	addi s4, s4, 1 # i inicia en 1
 		forinit:
