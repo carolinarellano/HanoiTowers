@@ -25,7 +25,7 @@ main:
 			lw t5, s7 # valor del disco actual
 			bge s4, t3, endfor # for(int i = 0; i < n; i++)
 			beq s4, zero, elsepop # if(s4 == 0)
-			sw zero, s7 # se borra lo leido de la torre origen -> t5 tiene el valor borrado
+			sw zero, s7 # se borra lo leido de la torre source -> t5 tiene el valor borrado
 			jalr ra
 		elsepop:
 			addi s7, s7, 4 # s7 = s1 + 4 
@@ -33,26 +33,31 @@ main:
 			addi s6, s6, 1 # count += 1
 			jal forpop
 
+	# se utiliza t5 como la variable que tiene el valor almacenado para hacer el push
 	push:
 		forpush:
-			# con el valor del count (s6) se hace un shift a la derecha para regresar al inicio
-			srli s7, s7, s6
-			addi s6, s6, 0 # se reinicia el contador
+			# se recorre el ciclo hasta que encuentra un valor diferente a 0, en ese caso, se restan 4 para acceder 
+			# a la posicion anterior y se agrega el valor de t5 a la primera posicion de disponible de la torre destination 
 
+			# con el valor del count (s6) se hace un shift a la derecha para regresar al inicio de la torre
+			srli s7, s7, s6
+			addi s6, s6, 0 # se reinicia count   
 			
 	hanoi:
+		# caso default
 		if: 	bne t3, t2, else # n != 1
-			addi s5, zero, ra
+				addi s5, zero, ra
 			
 			# moveDisk(source, destination)
-			# buscar el disco for -> para buscar != 0
+			# se hace pop y push de source y destination con las funciones definidas anteriormente
 				
 		# push
 			sw t5, 0(s3)		
 			jalr ra			# return
-			
+
 			
 		else:
+			# antes de entrar a la recursividad, se hace el push de memoria
 			# push -> n, ra
 			addi, sp, sp, -8
 			sw t3, 4(sp)
@@ -64,7 +69,7 @@ main:
 			# tower3 = tower2
 			# tower2 = temp
 			
-			jal  hanoi
+			jal hanoi
 
 			# pop <- n, ra
 			lw ra, 0(sp)
@@ -86,8 +91,6 @@ main:
 			jal ra, hanoi
 			
 		# hanoi(n - 1, auxiliary, source, destination);		
-		# se hace la segunda llamada a hanoi
-		hanoi2:
 			add t5, zero, s2 # temp = tower2 (auxiliary)
 			add s2, zero, s1 # tower2 = tower1(source)
 			add s1, zero, t5 # tower1 = temp (destination)
