@@ -63,7 +63,7 @@ pop:
 
 	# t5 se utiliza como la variable que tiene el valor almacenado para hacer el push
 	
-	# PUSH -> hace push del valor obtenido de la torre origen hacia la torre destino
+# PUSH -> hace push del valor obtenido de la torre origen hacia la torre destino
 push:
     addi sp, sp, -4
     sw ra, 0(sp)
@@ -75,11 +75,12 @@ forpush:
     lw s10, 0(s7) # Valor del disco actual
 
     # if (s10 == 0)
-    bne s10, zero, elsepush
+    beq s10, zero, elsepush
+	addi s7, s7, -4 # s7 = s7 - 4 -> regresa un lugar atras y coloca el disco
     sw t5, 0(s7) # Se agrega el valor de t5 a la torre destination
     jal endforpush
 
-elsepush:
+elsepush: 
     addi s7, s7, 4 # s7 = s7 + 4
     addi s4, s4, 1 # i++
     jal forpush # Salta al forloop (se almacena ra y regresa al for)
