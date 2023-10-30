@@ -6,7 +6,7 @@
     <img src="https://i.pinimg.com/564x/13/a9/f5/13a9f50ae42436d9c20f1d81c7eb84c8.jpg" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">project_title</h3>
+<h3 align="center">Hanoi Towers</h3>
 
   <p align="center">
     project_description
