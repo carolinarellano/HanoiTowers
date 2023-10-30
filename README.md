@@ -39,8 +39,6 @@
 This is a project for the Architecture and Organization of Computers, it is built on Assembly.
 **Hanoi Towers** is a recursive algorithm to know how many moves do yo have to do to move in order the disks from a tower to another.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 ### Built With
 
@@ -53,10 +51,6 @@ This is a project for the Architecture and Organization of Computers, it is buil
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 <!-- CONTACT -->
 ## Contact
 Project Link: [https://github.com/carolinarellano/HanoiTowers](https://github.com/carolinarellano/HanoiTowers)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
