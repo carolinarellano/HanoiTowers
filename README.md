@@ -45,12 +45,6 @@ This is a project for the Architecture and Organization of Computers, it is buil
 * C++ language (Code base)
 * Assembly (Implementation)
 
-
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE.txt` for more information.
-
 <!-- CONTACT -->
 ## Contact
 Project Link: [https://github.com/carolinarellano/HanoiTowers](https://github.com/carolinarellano/HanoiTowers)
