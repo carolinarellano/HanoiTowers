@@ -3,7 +3,7 @@
 .text
 	lui s1, 0x10010 # Torre 1 -> source
 	addi t2, zero, 1 # default
-	addi t3, zero, 15 # n -> cantidad de discos 
+	addi t3, zero, 3 # n -> cantidad de discos 
 	slli s0, t3, 2	 # n * 4 -> apuntadores a cada torre (offset) no se puede usar mul
 	add s2, s1, s0  # Torre 2 -> auxiliary
 	add s3, s2, s0  # Torre 3 -> destination
