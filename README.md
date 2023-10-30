@@ -9,11 +9,9 @@
 <h3 align="center">Hanoi Towers</h3>
 
   <p align="center">
-    project_description
-    <br />
-    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
+    First practice of Organization and architecure of computer class :)
+    <br/>
+    <br/>
     </p>
 </div>
 
