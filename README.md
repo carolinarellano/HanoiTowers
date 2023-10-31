@@ -26,7 +26,6 @@
       <ul>
         <li><a href="#built-with">Built With</a></li>
       </ul>
-      <li><a href="#license">License</a></li>
       <li><a href="#contact">Contact</a></li>
   </ol>
 </details>
@@ -48,3 +47,4 @@ This is a project for the Architecture and Organization of Computers, it is buil
 <!-- CONTACT -->
 ## Contact
 Project Link: [https://github.com/carolinarellano/HanoiTowers](https://github.com/carolinarellano/HanoiTowers)
+Made by: Carolina Arellano and Alicia Gomez 🖥️⭐️
