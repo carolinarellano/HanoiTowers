@@ -4,7 +4,7 @@
 	lui s1, 0x10010 # Torre 1 -> source
 	addi t2, zero, 1 # default
 	addi t3, zero, 3 # n -> cantidad de discos 
-	slli s0, t3, 2	 # n * 4 -> apuntadores a cada torre (offset) no se puede usar mul
+	slli s0, t3, 2	   # n * 4 -> apuntadores a cada torre (offset) no se puede usar mul
 	add s2, s1, s0  # Torre 2 -> auxiliary
 	add s3, s2, s0  # Torre 3 -> destination
 	addi t6, zero, 0 # Movimientos		
@@ -15,6 +15,7 @@ main:
 	# Aqui se inicializan los discos en la memoria
 	addi s4, s4, 1 # i inicia en 1
 	
+	#mover los apuntadores con la n ppara colocar los datos en la posicion adecuada
 	addi s2, s2, -4
 	addi s3, s3, -4
 	
