@@ -26,7 +26,6 @@
       <ul>
         <li><a href="#built-with">Built With</a></li>
       </ul>
-      <li><a href="#license">License</a></li>
       <li><a href="#contact">Contact</a></li>
   </ol>
 </details>
@@ -42,9 +41,10 @@ This is a project for the Architecture and Organization of Computers, it is buil
 
 ### Built With
 
-* C++ language (Code base)
+* C++ language (Base code)
 * Assembly (Implementation)
 
 <!-- CONTACT -->
 ## Contact
-Project Link: [https://github.com/carolinarellano/HanoiTowers](https://github.com/carolinarellano/HanoiTowers)
+Project Link: [https://github.com/carolinarellano/HanoiTowers](https://github.com/carolinarellano/HanoiTowers)<br>
+Made by: Carolina Arellano and Alicia Gomez 🖥️⭐️
