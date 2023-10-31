@@ -41,7 +41,7 @@ This is a project for the Architecture and Organization of Computers, it is buil
 
 ### Built With
 
-* C++ language (Code base)
+* C++ language (Base code)
 * Assembly (Implementation)
 
 <!-- CONTACT -->
