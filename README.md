@@ -46,5 +46,5 @@ This is a project for the Architecture and Organization of Computers, it is buil
 
 <!-- CONTACT -->
 ## Contact
-Project Link: [https://github.com/carolinarellano/HanoiTowers](https://github.com/carolinarellano/HanoiTowers)
+Project Link: [https://github.com/carolinarellano/HanoiTowers](https://github.com/carolinarellano/HanoiTowers)<br>
 Made by: Carolina Arellano and Alicia Gomez 🖥️⭐️
